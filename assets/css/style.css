@@ -545,3 +545,8 @@ nav {
     flex-direction: column;
   }
 }
+
+a:hover {
+  text-decoration: underline;
+  color: #2c49fe !important;
+}
