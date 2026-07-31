@@ -546,9 +546,6 @@ nav {
   }
 }
 
-
-
-
 .inside a:hover {
   text-decoration: underline;
   color: #2c49fe !important;
@@ -560,4 +557,9 @@ nav {
 
 .svgs a img:hover {
   transform: translateY(-5px);
+}
+
+.nav-link:hover {
+  color: #18205c !important;
+  text-decoration: underline !important;
 }
