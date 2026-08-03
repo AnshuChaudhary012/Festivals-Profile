@@ -445,7 +445,7 @@ nav {
     gap: 40px;
     margin-top: 50px !important;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
   }
   .hero .left img {
     width: 20vw;
@@ -543,7 +543,7 @@ nav {
     justify-content: start;
   }
 
-  
+
   .head-h {
     margin-top: 6px;
   }
