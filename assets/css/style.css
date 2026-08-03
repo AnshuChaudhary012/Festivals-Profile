@@ -325,7 +325,7 @@ nav {
 
 @media (min-width: 1900px) {
   .navbar {
-    margin: 0 272px !important;
+    /* margin: 0 272px !important; */
   }
 
   .navbar-nav {
@@ -368,8 +368,8 @@ nav {
     gap: 35px !important;
   }
 
-  main {
-    padding: 0px 300px 0px 300px;
+  .big-container {
+    margin: 0px 300px 0px 300px;
   }
   /* layer 2 after 1900 */
   .l2 {
@@ -424,9 +424,12 @@ nav {
 }
 
 @media (max-width: 1899px) {
+  .big-container {
+    margin: 0 10%;
+  }
   main {
     margin: 0px auto;
-    padding: 0px 12%;
+    /* padding: 0px 12%; */
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -452,6 +455,10 @@ nav {
   }
   .gallery div {
     gap: 20px;
+  }
+  .copyright {
+    margin-top: 95px;
+    margin-bottom: 0px;
   }
 }
 
@@ -500,9 +507,8 @@ nav {
   }
 
   .ft .right {
-    margin-top: 50px;
     margin-bottom: 30px;
-    justify-content: space-around;
+    margin-top: 70px !important;
   }
   .gallery div {
     gap: 14px;
