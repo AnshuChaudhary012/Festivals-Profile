@@ -38,6 +38,12 @@ header {
 
 /* layer 1 */
 
+.hero {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .hero .left img {
   max-width: 401px;
   width: 100%;
@@ -513,6 +519,8 @@ nav {
   .gallery div {
     gap: 14px;
   }
+
+
 }
 
 @media (max-width: 735px) {
@@ -533,6 +541,11 @@ nav {
   }
   .ft .right {
     justify-content: start;
+  }
+
+  
+  .head-h {
+    margin-top: 6px;
   }
 }
 
