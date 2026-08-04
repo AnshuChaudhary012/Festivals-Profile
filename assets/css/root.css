@@ -1,0 +1,10 @@
+:root {
+  --blue: #2c49fe;
+  --white: #fff;
+  --grey:#66666666;
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-xl: 20px;
+  --text-5xl:48px;
+}
