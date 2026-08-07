@@ -35,7 +35,7 @@ header {
 }
 .nav-btn:hover {
   background-color: #8192ff;
-  transition: all 600ms;
+  transition: transform 0.3s ease;
 }
 
 /* layer 1 */
@@ -88,20 +88,22 @@ a {
 
 .hero-svgs a {
   text-decoration: none;
-  color: var(--grey);
+  opacity: 60%;
+  color: #000;
   line-height: 150%;
   vertical-align: middle;
 }
 /* layer 2  */
 
 .l2-para {
-  color: var(--grey);
   font-weight: 400;
   font-size: var(--text-base);
   line-height: 180%;
   letter-spacing: 0%;
   max-width: 642px;
   width: 100%;
+  opacity: 60%;
+  color: #000;
 }
 
 /* layer 3 */
@@ -131,7 +133,7 @@ a {
 
 .top-p {
   max-width: 719px;
-  color: var(--grey);
+  opacity: 60%;
 }
 
 .inputs {
@@ -163,9 +165,8 @@ input:focus {
   padding: 13px 28px;
   border-radius: 36px;
   border: none;
-  margin-top: 6px;
-  margin-right: 6px;
-  margin-bottom: 7px;
+  margin: 6px;
+  margin-right: 7px;
 }
 .inputs button:hover {
   background-color: #8791d3;
@@ -387,6 +388,8 @@ nav {
   }
   .hero-p {
     margin-bottom: 0;
+    opacity: 60%;
+    color: #000;
   }
   .hero-btn {
     max-height: 46px;
@@ -449,6 +452,7 @@ nav {
   }
   .ft .right {
     gap: 74.8px !important;
+    margin-top: 45px;
   }
   .copyright {
     margin-top: 95px;
@@ -504,6 +508,8 @@ nav {
   }
   .l2-para {
     font-size: var(--text-sm);
+    opacity: 60%;
+    color: #000;
   }
   .gallery div {
     display: grid;
@@ -551,6 +557,12 @@ nav {
   }
   .btn-replace {
     display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-btn {
+    margin-top: 13px;
   }
 }
 
@@ -614,7 +626,6 @@ nav {
   .msg .right .top p {
     font-size: 14px;
   }
- 
   .svg {
     max-width: 125px;
     width: 100%;
@@ -638,9 +649,32 @@ main {
   transform: translateY(-5px);
 }
 
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 2px;
+  background: #007bff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
 .nav-link:hover {
-  color: #18205c !important;
-  text-decoration: underline !important;
+  color: #007bff;
+  transition: transform 0.3s ease;
 }
 
 .l4 {
@@ -649,3 +683,12 @@ main {
   margin: 0 auto;
 }
 
+.hero-p {
+  opacity: 60%;
+  color: #000;
+}
+
+.top-p {
+  opacity: 60%;
+  color: #000;
+}
