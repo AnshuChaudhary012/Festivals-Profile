@@ -65,7 +65,8 @@ nav {
 .nav-btn:hover {
   background-color: rgb(255, 251, 251);
   color: #007bff;
-  /* border: 0.001px solid #007bff; */
+  border: 1px solid #007bff;
+  padding: 10px 27px;
 }
 
 .nav-links {
@@ -197,6 +198,7 @@ main {
   max-width: 1320px;
   display: flex;
   gap: 59px;
+  margin-top: 67px;
 }
 
 .hero .left img {
@@ -204,12 +206,12 @@ main {
   height: 408px;
   max-width: 100%;
   border-radius: 30px;
-  margin-top: 67px;
+  /* margin-top: 67px; */
 }
 .hero .right {
   max-width: 857px;
   width: 100%;
-  margin-top: 71px;
+  margin-top: 4px;
 }
 .hero-li {
   margin-bottom: 12px;
@@ -218,6 +220,7 @@ main {
   font-weight: 600;
   font-size: var(--text-5xl);
   line-height: 150%;
+  color: #000;
 }
 .hero-p {
   margin-bottom: 0;
@@ -226,10 +229,11 @@ main {
 }
 
 li a {
-  color: var(--grey);
+  color: #000;
   font-weight: 400;
   font-size: var(--text-base);
   line-height: 150%;
+  opacity: 60%;
 }
 
 .hero-btn {
@@ -314,8 +318,6 @@ li a {
 .tall {
   grid-row: span 2;
 }
-
-
 
 /* =========================================================
    LAYER 4 / COMMENTS
@@ -447,7 +449,8 @@ li a {
 
 .btm-msg {
   margin-top: 8px;
-  color: var(--grey);
+  color: #000;
+  opacity: 60%;
 }
 
 .btm-msg img {
@@ -614,7 +617,7 @@ footer .gallery div img {
   .gallery div {
     gap: 18px;
   }
-  .l4{
+  .l4 {
     margin-top: 45px;
   }
 }
@@ -727,7 +730,7 @@ footer .gallery div img {
     flex-direction: column;
   }
 
-  .l4{
+  .l4 {
     margin-top: 35px;
   }
 
