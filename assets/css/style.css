@@ -318,9 +318,7 @@ li a {
   grid-row: span 2;
 }
 
-.l3 .gallery {
-  margin-bottom: 67px !important;
-}
+
 
 /* =========================================================
    LAYER 4 / COMMENTS
@@ -330,6 +328,7 @@ li a {
   width: 100%;
   max-width: 1320px;
   margin: 0 auto;
+  margin-top: 67px;
 }
 
 .l4 .top .head-h {
@@ -618,6 +617,9 @@ footer .gallery div img {
   .gallery div {
     gap: 18px;
   }
+  .l4{
+    margin-top: 45px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -728,12 +730,19 @@ footer .gallery div img {
     flex-direction: column;
   }
 
+  .l4{
+    margin-top: 35px;
+  }
+
   .gallery div {
     gap: 4px !important;
   }
 
   .side-menu {
     width: 100%;
+  }
+  .inputs {
+    margin-bottom: 30px;
   }
 
   .inputs input {
