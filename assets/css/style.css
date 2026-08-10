@@ -438,6 +438,7 @@ li a {
   font-weight: 500;
   font-size: var(--text-base);
   line-height: 150%;
+  color: #000;
 }
 
 .msg .right .top p {
@@ -445,6 +446,8 @@ li a {
   font-weight: 400;
   font-size: var(--text-base);
   line-height: 150%;
+  color: #000;
+  opacity: 60%;
 }
 
 .btm-msg {
