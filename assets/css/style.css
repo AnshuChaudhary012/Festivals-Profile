@@ -266,10 +266,15 @@ li a {
   vertical-align: middle;
 }
 
+.hero-svgs .data:hover {
+  transition: 0.3s;
+  color: blue;
+}
+
 .hero-svgs a:hover {
   cursor: pointer;
   text-decoration: underline;
-  transition: 3s;
+  transition: 0.3s;
 }
 
 /* =========================================================
