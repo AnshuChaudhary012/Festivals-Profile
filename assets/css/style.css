@@ -60,13 +60,13 @@ nav {
   margin-left: 56px;
   margin-top: 13px;
   margin-bottom: 7px;
+  border: 1px solid transparent;
 }
 
 .nav-btn:hover {
   background-color: rgb(255, 251, 251);
   color: #007bff;
   border: 1px solid #007bff;
-  padding: 10px 27px;
 }
 
 .nav-links {
@@ -258,12 +258,18 @@ li a {
   gap: 35px;
 }
 
-.hero-svgs a {
+.hero-svgs .data {
   color: #000;
   opacity: 0.6;
 
   line-height: 150%;
   vertical-align: middle;
+}
+
+.hero-svgs a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  transition: 3s;
 }
 
 /* =========================================================
@@ -456,6 +462,13 @@ li a {
   opacity: 60%;
 }
 
+.btm-msg:hover {
+  text-decoration: underline;
+  color: red;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 .btm-msg img {
   margin-left: 20px;
 }
@@ -478,7 +491,7 @@ footer {
 
 .ft {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1320px;
 }
 
 footer .left {
@@ -510,6 +523,7 @@ footer .left p {
 
 .svgs a img:hover {
   transform: translateY(-5px);
+  transition: 0.3s;
 }
 
 .services .main {
@@ -528,6 +542,7 @@ footer .left p {
 .inside a:hover {
   text-decoration: underline;
   color: var(--blue) !important;
+  transition: 0.3s;
 }
 
 footer .gallery div img {
@@ -594,7 +609,7 @@ footer .gallery div img {
   }
 
   footer {
-    padding: 20px 40px;
+    padding: 60px 24px;
   }
 
   .gallery div {
@@ -626,6 +641,9 @@ footer .gallery div img {
 }
 
 @media (max-width: 1024px) {
+  .hero {
+    gap: 20px;
+  }
   .hero .right {
     max-width: 960px;
     width: 100%;
@@ -657,9 +675,8 @@ footer .gallery div img {
   }
 
   .hero .left img {
-    width: 619px;
+    width: 410px;
     max-width: 100%;
-
     margin: 0 auto;
   }
 
@@ -680,6 +697,7 @@ footer .gallery div img {
 
   .btn-replace {
     display: block;
+    border: 1px solid transparent;
   }
 
   .nav-btn {
@@ -702,6 +720,9 @@ footer .gallery div img {
   .head-h {
     margin-top: 6px;
   }
+  .l3 .head-h {
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -718,6 +739,7 @@ footer .gallery div img {
   .logo {
     width: 100%;
     max-width: 200px;
+    height: auto;
   }
 
   .hero .left img {
@@ -757,7 +779,13 @@ footer .gallery div img {
   }
 
   footer {
-    padding: 15px 20px;
+    padding: 50px 24px;
+    margin-top: 50px;
+  }
+
+  .ft .right {
+    margin-top: 40px !important;
+    margin-bottom: 0;
   }
 
   .svg {
